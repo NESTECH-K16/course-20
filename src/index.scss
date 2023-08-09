@@ -1,11 +1,14 @@
 .container {
 	max-width: 1200px;
 	margin: auto;
-	background: salmon;
+	background: white;
 	color: white;
 	font-size: 34px;
 	text-align: center;
 	padding: 20px;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 
 button {
@@ -15,6 +18,10 @@ button {
 	padding: 0 24px;
 	line-height: 32px;
 	height: 32px;
+	border: none;
+	border-radius: 4px;
+	width: 120px;
+	cursor: pointer;
 }
 
 input {
@@ -25,5 +32,72 @@ input {
 	border: none;
 	border-radius: 4px;
 	width: 300px;
+}
+
+.counter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+}
+
+.modal {
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 500px;
+	border-radius: 4px;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	z-index: 2;
+	background: slateblue;
+
+	padding: 24px;
+
+	&-actions {
+		display: flex;
+		gap: 24px;
+		justify-content: flex-end;
+	}
+}
+
+.overlay {
+	background: #ccc;
+	min-height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+}
+
+#modal {
+	z-index: 2;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2vw 3vw;
+	background: slateblue;
+	margin-bottom: 40px;
+}
+.product {
+	width: 200px;
+	background-color: lightgrey;
+	color: white;
+	padding: 12px;
+	border-radius: 12px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	justify-content: space-between;
+	button {
+		width: 100%;
+	}
 }
 
