@@ -1,0 +1,19 @@
+@import 'layout.styles';
+@import 'milkTea.styles';
+
+:root {
+	font-size: 62.5%;
+	// font-size: 10px;
+}
+
+body {
+	background-color: #001f3f;
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	// justify-content: space-between;
+}
+

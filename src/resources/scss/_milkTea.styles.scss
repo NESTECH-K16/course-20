@@ -1,0 +1,52 @@
+.milk-tea {
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+	border: 1px solid #ccc;
+	border-radius: 0.4rem;
+	color: white;
+
+	&__left {
+		display: flex;
+		gap: 1.6rem;
+		font-size: 1.4rem;
+		line-height: 2.2rem;
+	}
+
+	input[type='number'] {
+		width: 4.2rem;
+	}
+}
+
+.milk-teas {
+	// height: 100%;
+	padding: 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2.4rem;
+	max-width: 748px;
+	margin: auto;
+}
+
+.order-btn {
+	margin-left: auto;
+	// float: right;
+	width: 120px;
+	height: 44px;
+	line-height: 44px;
+	border-radius: 0.4rem;
+	padding: 0 24px;
+	text-align: center;
+	font-size: 1.4rem;
+	color: white;
+	background-color: #df5325;
+	border: none;
+	cursor: pointer;
+}
+
+.cart {
+	color: white;
+	font-size: 1.4rem;
+}
+
