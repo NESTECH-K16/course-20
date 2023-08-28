@@ -1,0 +1,72 @@
+.flex {
+	display: flex;
+}
+.space-between {
+	justify-content: space-between;
+}
+.align-items-center {
+	align-items: center;
+}
+
+@for $i from 1 through 60 {
+	.gap-#{$i} {
+		gap: #{$i}px;
+	}
+}
+@for $i from 1 through 60 {
+	.px-#{$i} {
+		padding: 0 #{$i}px;
+	}
+}
+@for $i from 1 through 60 {
+	.py-#{$i} {
+		padding-top: #{$i}px;
+		padding-bottom: #{$i}px;
+	}
+}
+
+@for $i from 0 through 60 {
+	.m-#{$i} {
+		margin: #{$i}px;
+	}
+}
+
+.base-card {
+	box-shadow: 4px 8px 29px 3px rgba(0, 0, 0, 0.1);
+	background-color: white;
+	border-radius: 0.8rem;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.invalid {
+	color: red;
+	label {
+		color: #232323;
+	}
+	input {
+		border-color: red;
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+.w-full {
+	width: 100%;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.text-white {
+	color: white;
+}
+

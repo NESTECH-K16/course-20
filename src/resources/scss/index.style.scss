@@ -1,3 +1,14 @@
+*,
+*::before,
+*::after {
+	// padding: 0;
+	// margin: 0;
+}
+
+ul {
+	padding: 0;
+}
+@import 'utilities.styles';
 @import 'layout.styles';
 @import 'milkTea.styles';
 
@@ -8,6 +19,7 @@
 
 body {
 	background-color: #001f3f;
+	font-size: 1.6rem;
 }
 
 .container {
